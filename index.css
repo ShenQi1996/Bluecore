@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("https://cdn.dribbble.com/users/1715186/screenshots/14523012/media/cdcfee1d839ffd8094f2a63cccce9a7e.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-image: url("https://storage.googleapis.com/img.triggermail.io/124_rivington/site_backghround.jpeg");
+  min-width: 50%;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 5%;
+}
+.hide_modal {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .modal h3 {
+    font-size: 1rem;
+  }
+}
+
+.big_text {
+  font-size: 4.3rem;
+  padding-bottom: 0.5rem;
+  margin: 0 10%;
+}
+@media (orientation: portrait) {
+  .big_text {
+    font-size: 3rem;
+    margin: 0 2%;
+  }
+}
+
+.close_modal {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+#close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: lightslategray;
+}
+
+.input1 {
+  border: none;
+  padding: 1rem;
+  min-width: 30%;
+  font-size: 0.6rem;
+  margin: 1rem;
+  width: 30%;
+}
+.modal > a {
+  color: rgb(69, 79, 88);
+  padding: 1rem;
+}
+a {
+  color: black;
+}
+
+.modal2 {
+  display: none;
+}
+
+.show_modal2 {
+  background-image: url("https://storage.googleapis.com/img.triggermail.io/124_rivington/site_backghround.jpeg");
+  min-width: 50%;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 5%;
+  font-size: 1.5rem;
+}
+
+.modal2 > h1 {
+  flex: 0.9;
+  margin: 4rem;
+}
+.modal2 > .close_modal {
+  flex: 0.1;
+}
+#close2 {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: lightslategray;
+}
