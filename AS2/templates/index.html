@@ -1,0 +1,22 @@
+<html>
+    <head> </head>
+    <body>
+        {% if 'diamond' == customer.status %}
+        <p>
+            Only for Diamond members! 15% off everything today using code ABC21 & free shipping (P.S. You have XXX reward points available!)
+        </p>
+        {% elif 'gold' == customer.status %}
+        <p>
+            Only for Gold members! Get free shipping today on everything (P.S. You have XXX reward points available!)
+        </p>
+        {% elif 'basic' == customer.status %}
+        <p>
+            Don’t forget to use your rewards! You haveXXX reward points available
+        </p>
+        {% else %}
+        <p>
+            Become a VIP! Earn rewards, perks and more. Click here.
+        </p>
+        {% endif %}
+    </body>
+</html>
